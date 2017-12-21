@@ -6,14 +6,14 @@ default: &default
 
 development:
   <<: *default
-  database: mergoat_development
+  database: geomancy_development
 
 test:
   <<: *default
-  database: mergoat_test
+  database: geomancy_test
 
 production:
   <<: *default
-  database: mergoat_production
-  username: mergoat
-  password: <%= ENV['MERGOAT_DATABASE_PASSWORD'] %>
+  database: geomancy_production
+  username: geomancy
+  password: <%= ENV['GEOMANCY_DATABASE_PASSWORD'] %>
